@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .logo-container_01 {
+            position: relative;
+            width: 1000px;
+        }
+
+        .logo-container_01 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text-overlay_01 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+
+            background-color: rgba(0, 0, 0, 0.5); /* optional for readability */
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SmartSky Energy</h1>
+    <p>Smart Wind Energy with Bird-Safe Technology</p>
+
+    <div class="logo-container_01">
+        <img src="images/main_02.jpg" alt="SmartSky Image">
+
+        <div class="text-overlay_01">
+           <br> Smart Wind Energy with Bird-Safe Technology <br> SmartSky Energy (SSE)
+        </div>
+    </div>
+</header>
+
+@keyframes customBlink {
+  0%, 100% { font-size: 16px; color: red; }
+  50% { font-size: 24px; color: blue; }
+}
+
+.custom-blink {
+  animation: customBlink 2s linear infinite;
+}
+
+
+</body>
+</html>

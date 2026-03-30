@@ -1,0 +1,307 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSky Energy | Bird-Safe Wind Tech</title>
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --eco-green: #4CAF50;
+            --dark-grey: #333;
+            --light-bg: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: var(--dark-grey);
+            background-color: var(--light-bg);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-container img {
+            height: 60px;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark-grey);
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1466611653911-95281773ad90?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        header h1 { font-size: 3.5rem; margin-bottom: 0; }
+        header p { font-size: 1.5rem; margin-top: 10px; font-weight: 300; }
+
+        /* Tech Section */
+        .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { color: var(--primary-blue); border-bottom: 2px solid var(--eco-green); padding-bottom: 10px; }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+ 
+
+ .logo-container_01 {
+            position: relative;
+            width: 1000px;
+        }
+
+        .logo-container_01 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text-overlay_01 {
+            position: absolute;
+             
+              left: 50%;
+		bottom: 10px;
+  		width: 50%;
+            transform: translate(-50%, -50%);
+            
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+
+            background-color: rgba(0, 0, 0, 0.5); /* optional for readability */
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+
+ .blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+    -webkit-animation: blink-animation 1s steps(2, start) infinite;
+  }
+
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+
+@keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        .blinking-text {
+            text-align: center;
+            margin-top: 1%;
+            font-size: 44px;
+            color: white;
+            animation: blink 1s infinite;
+        }
+
+
+
+    </style>
+ 
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="images\sse_logo.jpeg" alt="SmartSky Energy Logo">
+            <div style="font-size: 1.5rem; font-weight: bold; color: #0056b3;">SmartSky Energy (SSE)</div>
+        </div>
+        <div class="nav-links">
+            <a href="#technology">Technology</a>
+            <a href="#mission">Mission</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+ 
+ <header>    
+      	 <h2> <blink>  Smart Wind Energy with Bird-Safe Technology </blink> </h2> 
+ 	<div class="blinking-text">
+       	 Smart Wind Energy with Bird-Safe Technology
+    	</div>
+        
+	<div class="logo-container_01">
+        <img src="images/main_02.jpg" alt="SmartSky Image">
+
+        <div class="text-overlay_01">
+           SmartSky Energy (SSE)
+        </div>
+
+    </div>
+ 
+        </div> 
+    </header>
+
+ 
+    <section class="container" id="technology">
+        <h2 style="text-align: center; font-size: 2.5rem;">My product</h2>
+        <p style="text-align: center; color: #666;">Protecting biodiversity while powering the future.</p>
+        
+       	 <div class="grid">
+            <div class="card">
+                <h3>X-Band Radar</h3>
+                <p>Short-range detection that identifies incoming birds and bats with precision, even in complex environments.</p>
+            </div>
+            <div class="card">
+                <h3>360° Scanning</h3>
+                <p>Our rotating radar antenna provides continuous surveillance across the entire wind farm perimeter.</p>
+            </div>
+            <div class="card">
+                <h3>AI Computer Vision</h3>
+                <p>Advanced AI cameras track flight paths in real-time, distinguishing between species to trigger safety protocols.</p>
+            </div>
+            <div class="card">
+                <h3>Acoustic Sensors</h3>
+                <p>Specialized microphones detect bat echolocation and bird calls during low visibility or night operations.</p>
+            </div>
+
+
+
+
+	 <div class="card">
+                <h3>Signal Processing Unit</h3>
+                <p>Analyzes radar and camera data, filters noise, tracks objects.</p>
+            </div>
+
+ 	<div class="card">
+                <h3>AI Collision Prediction Software</h3>
+                <p>Predicts bird flight paths and calculates collision risk.</p>
+            </div>
+
+ 	   <div class="card">
+                <h3>Migration Prediction Module</h3>
+                <p>Uses historical data to forecast large flocks.</p>
+            </div>
+
+ 	<div class="card">
+                <h3>Ultrasonic Speakers & LED Lights</h3>
+                <p>- Emit high-frequency sounds to scare birds away.
+ 		   			- Flashing lights warn birds of turbines.</p>
+               </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="mission" style="background: white; padding: 80px 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Our Mission</h2>
+                <p>At <strong>SmartSky Energy</strong>, we believe renewable energy shouldn't come at the cost of local wildlife. Our integrated sensing suite ensures that wind turbines c	an operate at peak efficiency while automatically slowing or stopping when protected species are in the flight path.</p>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="images\main_01.jpg" alt="Nature" style="width: 100%; border-radius: 15px;">
+            </div> 
+        
+	  
+   	</div>  
+
+    </section>
+
+
+ 	<section id="code" style="background: white; padding: 40px 0;"> 
+	   <div class="card">
+		<div style="text-align: center;"> 
+                 <h3></h3>   
+                 <img src="images\code_02.jpeg" alt="HTML Image">
+ 		<h3>Google Slide</h3>
+               </div>  
+	  </div>  
+    </section>
+ 
+
+    <section id="contact" style="background: white; padding: 80px 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Contact:- Founder and CEO</h2>
+                <p>  <strong>Narmadha Ramanujam Radhakrishnan </strong> 
+                 <br> <strong>Email:- </strong>  Narmadha.ramanujam-radhakrishnan.student.kista@engelska.se<br>
+                    <p><a href="mailto:Narmadha.ramanujam-radhakrishnan.student.kista@engelska.se">Send email</a></p>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="images\photo.jpg" alt="Nature" style="width: 60%; border-radius: 15px;">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <p>&copy; 2026 SmartSky Energy SSE.</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+ 

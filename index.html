@@ -53,7 +53,11 @@
 
         /* Hero Section */
         header {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1466611653911-95281773ad90?auto=format&fit=crop&w=1350&q=80');
+
+              background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('images/main_03.jpg');
+
+ 
+					 
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -97,7 +101,75 @@
             padding: 40px 0;
             margin-top: 50px;
         }
+ 
+
+ .logo-container_01 {
+            position: relative;
+            width: 1000px;
+        }
+
+        .logo-container_01 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text-overlay_01 {
+            position: absolute;
+             
+              left: 50%;
+		bottom: 10px;
+  		width: 50%;
+            transform: translate(-50%, -50%);
+            
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+
+            background-color: rgba(0, 0, 0, 0.5); /* optional for readability */
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+
+ .blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+    -webkit-animation: blink-animation 1s steps(2, start) infinite;
+  }
+
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+
+@keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        .blinking-text {
+            text-align: center;
+            margin-top: 1%;
+            font-size: 44px;
+            color: white;
+            animation: blink 1s infinite;
+        }
+
+
+
     </style>
+ 
 </head>
 <body>
 
@@ -113,24 +185,40 @@
         </div>
     </nav>
 
-    <header>
-        <h1>SmartSky Energy</h1>
-        <p>Smart Wind Energy with Bird-Safe Technology</p>
-         <div class="logo-container">
-            <img src="images\main_02.jpg">
+ 
+ <header>    
+
+ 
+      
+          <h2> <blink> <div style="font-size: 1.5rem; font-weight: bold; color: white;"> Smart Wind Energy with Bird-Safe Technology  </div> </blink> </h2> 
+     
+     <br>  
+	<div class="logo-container_01">
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 	
+
+        		<div class="text-overlay_01">
+         			  SmartSky Energy (SSE)
+       			 </div> 
+   	 </div>
+ 
+        </div> 
+
 
  
 
-            <div style="font-size: 1.5rem; font-weight: bold; color: #0056b3;">SmartSky Energy (SSE)</div>
-        </div>
-
     </header>
 
+
+				 
+
+
+<br> <br> 
+ 
     <section class="container" id="technology">
         <h2 style="text-align: center; font-size: 2.5rem;">My product</h2>
-        <p style="text-align: center; color: #666;">Protecting biodiversity while powering the future.</p>
+        <p style="text-align: center; color: #666;"><B>Protecting biodiversity while powering the future.</B></p>
         
-        <div class="grid">
+       	 <div class="grid">
             <div class="card">
                 <h3>X-Band Radar</h3>
                 <p>Short-range detection that identifies incoming birds and bats with precision, even in complex environments.</p>
@@ -161,7 +249,7 @@
                 <p>Predicts bird flight paths and calculates collision risk.</p>
             </div>
 
- 	<div class="card">
+ 	   <div class="card">
                 <h3>Migration Prediction Module</h3>
                 <p>Uses historical data to forecast large flocks.</p>
             </div>
@@ -173,28 +261,57 @@
                </div>
 
 
-
-
-
-
         </div>
     </section>
+
 
     <section id="mission" style="background: white; padding: 80px 0;">
         <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
             <div style="flex: 1; min-width: 300px;">
                 <h2>Our Mission</h2>
-                <p>At <strong>SmartSky Energy</strong>, we believe renewable energy shouldn't come at the cost of local wildlife. Our integrated sensing suite ensures that wind turbines can operate at peak efficiency while automatically slowing or stopping when protected species are in the flight path.</p>
+                <p>At <strong>SmartSky Energy</strong>, we believe renewable energy shouldn't come at the cost of local wildlife. Our integrated sensing suite ensures that wind turbines c	an operate at peak efficiency while automatically slowing or stopping when protected species are in the flight path.</p>
             </div>
             <div style="flex: 1; min-width: 300px;">
                 <img src="images\main_01.jpg" alt="Nature" style="width: 100%; border-radius: 15px;">
+            </div> 
+        
+	  
+   	</div>  
+
+    </section>
+
+
+ 	<section id="code" style="background: white; padding: 50px 0;"> 
+	   <div class="card">
+		<div style="text-align: center;"> 
+                 <h3></h3>   
+                 <img src="images/code_02.jpeg" alt="HTML Image">
+ 		<h2> <p style="color: blue;">Google Slide</p></h2>
+                <h3> QR-Code </h3>
+                
+               </div>  
+	  </div>  
+    </section>
+ 
+
+    <section id="contact" style="background: white; padding: 80px 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h1>Contact:- Founder and CEO</h1>
+                <p>  <strong><h2>Narmadha Ramanujam Radhakrishnan</h2> </strong> 
+                   <strong>Email:- </strong>  Narmadha.ramanujam-radhakrishnan.student.kista@engelska.se </p> 
+                     <p><a href="mailto:Narmadha.ramanujam-radhakrishnan.student.kista@engelska.se">Send email</a></p>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="images\photo.jpg" alt="Nature" style="width: 60%; border-radius: 15px;">
             </div>
         </div>
     </section>
+ 
 
     <footer>
-        <p>&copy; 2026 SmartSky Energy SSE. All rights reserved.</p>
-        <p>Engineering a Greener, Safer Horizon.</p>
+        <p>&copy; 2026 SmartSky Energy SSE.</p>
+        <p>All rights reserved.</p>
     </footer>
 
 </body>
